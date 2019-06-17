@@ -10,23 +10,23 @@ var app = express();
 
 app.use(express.static("public"));
 
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+// app.use(express.urlencoded({ extended: true }));
+// app.use(express.json());
 
-var exphbs = require("express-handlebars");
+// var exphbs = require("express-handlebars");
 
 
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
+// app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+// app.set("view engine", "handlebars");
 
-var routes = require("./controllers/burgers_controller.js");
+// var routes = require("./controllers/burgers_controller.js");
 
-app.use(routes);
+// app.use(routes);
 
 
 app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
-    console.log("app is now active at localhost" + PORT);
+    console.log("app is now active at localhost:" + PORT);
   });
   
   
