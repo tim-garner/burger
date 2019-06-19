@@ -1,9 +1,9 @@
-DROP DATABASE IF EXISTS burg;
-CREATE DATABASE burg;
+DROP DATABASE IF EXISTS burger_db;
+CREATE DATABASE burger_db;
 
-USE burg
+USE burger_db
 
-CREATE TABLE bestburger
+CREATE TABLE burgers
 
 (
 
@@ -15,3 +15,10 @@ dt DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 PRIMARY KEY (id)
 
 );
+
+INSERT INTO burgers (burgerName) VALUES ("hawaiianburger");
+INSERT INTO burgers (burgerName) VALUES ("pimburger");
+INSERT INTO burgers (burgerName) VALUES ("hamburger");
+INSERT INTO burgers (burgerName) VALUES ("cheeseburger");
+
+SELECT * FROM burgers
