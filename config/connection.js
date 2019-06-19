@@ -8,13 +8,13 @@ var connection = mysql.createConnection({
   database: "burger_db"
 });
 
-// connection.connect(function(err) {
-//   if (err) throw err;
-//   connection.query("SELECT * FROM burgers", function (err, result, fields) {
-//     if (err) throw err;
-//     console.log(result);
-//   });
-// });
+connection.connect(function(err) {
+  if (err) throw err;
+  connection.query("SELECT * FROM burgers", function (err, result, fields) {
+    if (err) throw err;
+    console.log(result);
+  });
+});
 
 
 // Make connection.

@@ -1,4 +1,6 @@
-INSERT INTO bestburger (burgerName) VALUES ("hawaiianburger");
-INSERT INTO bestburger (burgerName) VALUES ("pimburger");
-INSERT INTO bestburger (burgerName) VALUES ("hamburger");
-INSERT INTO bestburger (burgerName) VALUES ("cheeseburger");
+INSERT INTO burgers (burgerName) VALUES ("hawaiianburger");
+INSERT INTO burgers (burgerName) VALUES ("pimburger");
+INSERT INTO burgers (burgerName) VALUES ("hamburger");
+INSERT INTO burgers (burgerName) VALUES ("cheeseburger");
+
+SELECT * FROM burgers
