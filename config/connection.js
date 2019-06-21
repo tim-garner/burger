@@ -15,15 +15,15 @@ connection = mysql.createConnection({
   database: "yum"
 });
 connection.connect();
-module.exports = connection;
+// module.exports = connection;
 
-connection.connect(function(err) {
-  if (err) throw err;
-  connection.query("SELECT * FROM burgers", function (err, result, fields) {
-    if (err) throw err;
-    console.log(result);
-  });
-});
+// connection.connect(function(err) {
+//   if (err) throw err;
+//   connection.query("SELECT * FROM bur", function (err, result, fields) {
+//     if (err) throw err;
+//     console.log(result);
+//   });
+// });
 
 
 // Make connection.
