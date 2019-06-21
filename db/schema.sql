@@ -1,10 +1,9 @@
-DROP DATABASE IF EXISTS burger_db;
-CREATE DATABASE burger_db;
+DROP DATABASE IF EXISTS yum;
+CREATE DATABASE yum;
+USE yum;
 
-USE burger_db
-
-CREATE TABLE burgers
-
+CREATE TABLE bur
+	
 (
 
 id INT AUTO_INCREMENT NOT NULL,
@@ -16,9 +15,3 @@ PRIMARY KEY (id)
 
 );
 
-INSERT INTO burgers (burgerName) VALUES ("hawaiianburger");
-INSERT INTO burgers (burgerName) VALUES ("pimburger");
-INSERT INTO burgers (burgerName) VALUES ("hamburger");
-INSERT INTO burgers (burgerName) VALUES ("cheeseburger");
-
-SELECT * FROM burgers
